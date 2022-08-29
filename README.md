@@ -84,8 +84,8 @@ https://github.com/duyvien/HostAFullStackApplication/blob/main/.circleci/config.
 
 ### Architecture diagram to document the deployment flow
 - Development Pipeline Diagram
-![alt text]()
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/Pipeline.png)
 - Infrastructure Diagram
-![alt text]()
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/Infrastructure.png)
 
 
