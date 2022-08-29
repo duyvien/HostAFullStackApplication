@@ -40,15 +40,15 @@ Provision the necessary AWS services needed for running the application:
 
 ### Preparing setting infrastructure for deployment
 - Environment variables stored in AWS elastic beanstalk configuration
-    POSTGRES_USERNAME=postgres
-    POSTGRES_PASSWORD=15011993
-    POSTGRES_HOST=database-1.ccbyuqu00sip.us-east-1.rds.amazonaws.com
-    POSTGRES_DB=postgres
-    AWS_BUCKET=arn:aws:s3:::myawsbucket781121
-    AWS_REGION=us-east-1
-    AWS_PROFILE=default
-    JWT_SECRET=mysecretstring
-    URL=http://udagram-api-dev781121.us-east-1.elasticbeanstalk.com/
+    - POSTGRES_USERNAME=postgres
+    - POSTGRES_PASSWORD=15011993
+    - POSTGRES_HOST=database-1.ccbyuqu00sip.us-east-1.rds.amazonaws.com
+    - POSTGRES_DB=postgres
+    - AWS_BUCKET=arn:aws:s3:::myawsbucket781121
+    - AWS_REGION=us-east-1
+    - AWS_PROFILE=default
+    - JWT_SECRET=mysecretstring
+    - URL=http://udagram-api-dev781121.us-east-1.elasticbeanstalk.com/
 - Environment variables for CI/CD stored in CircleCI Project Settings
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ProjectSettingsCircleCI.png)
 ### Configure the needed infrastructure for a web application
