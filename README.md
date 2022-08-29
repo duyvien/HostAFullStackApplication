@@ -39,5 +39,14 @@ Provision the necessary AWS services needed for running the application:
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
 ### Configure the needed infrastructure for a web application
-RDS Screenshot
+Screenshots
+- CircleCi Project Setting
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ProjectSettingsCircleCI.png)
+- Last successful CircleCi build
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/buildCircleCI.png)
+- AWS RDS for the database overview
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/RDS.png)
+- AWS ElasticBeanstalk for the (backend) API deployment
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ElasticBeanstalk.png)
+- AWS S3 for (frontend) web hosting
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/S3Bucket.png)
