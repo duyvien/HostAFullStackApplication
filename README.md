@@ -51,6 +51,19 @@ Provision the necessary AWS services needed for running the application:
     - URL=http://udagram-api-dev781121.us-east-1.elasticbeanstalk.com/
 - Environment variables for CI/CD stored in CircleCI Project Settings
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ProjectSettingsCircleCI.png)
+- Write to scripts of the project-level package.json file
+    - "frontend:install": "cd udagram/udagram-frontend && npm install -f"
+    - "frontend:start": "cd udagram/udagram-frontend && npm run start"
+    - "frontend:build": "cd udagram/udagram-frontend && npm run build"
+    - "frontend:test": "cd udagram/udagram-frontend && npm run test"
+    - "frontend:e2e": "cd udagram/udagram-frontend && npm run e2e"
+    - "frontend:lint": "cd udagram/udagram-frontend && npm run lint"
+    - "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy"
+    - "api:install": "cd udagram/udagram-api && npm install ."
+    - "api:build": "cd udagram/udagram-api && npm run build"
+    - "api:start": "cd udagram/udagram-api && npm run dev"
+    - "api:deploy": "cd udagram/udagram-api && npm run deploy"
+    - "deploy": "npm run api:deploy && npm run frontend:deploy"    
 ### Configure the needed infrastructure for a web application
 Screenshots
 - Last successful CircleCi build
@@ -61,3 +74,7 @@ Screenshots
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ElasticBeanstalk.png)
 - AWS S3 for (frontend) web hosting
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/S3Bucket.png)
+- Link to hosted api: http://udagram-api-dev781121.us-east-1.elasticbeanstalk.com/api/v0/feed
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/api.png)
+- Link to hosted front-end: http://myawsbucket781121.s3-website-us-east-1.amazonaws.com/home
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/fontend.png)
