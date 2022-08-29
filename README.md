@@ -38,10 +38,21 @@ Provision the necessary AWS services needed for running the application:
 1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
 1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
+### Preparing setting infrastructure for deployment
+- Environment variables stored in AWS elastic beanstalk configuration
+    POSTGRES_USERNAME=postgres
+    POSTGRES_PASSWORD=15011993
+    POSTGRES_HOST=database-1.ccbyuqu00sip.us-east-1.rds.amazonaws.com
+    POSTGRES_DB=postgres
+    AWS_BUCKET=arn:aws:s3:::myawsbucket781121
+    AWS_REGION=us-east-1
+    AWS_PROFILE=default
+    JWT_SECRET=mysecretstring
+    URL=http://udagram-api-dev781121.us-east-1.elasticbeanstalk.com/
+- Environment variables for CI/CD stored in CircleCI Project Settings
+![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ProjectSettingsCircleCI.png)
 ### Configure the needed infrastructure for a web application
 Screenshots
-- CircleCi Project Setting
-![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/ProjectSettingsCircleCI.png)
 - Last successful CircleCi build
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/buildCircleCI.png)
 - AWS RDS for the database overview
