@@ -78,3 +78,14 @@ Screenshots
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/api.png)
 - Link to hosted front-end: http://myawsbucket781121.s3-website-us-east-1.amazonaws.com/home
 ![alt text](https://github.com/duyvien/HostAFullStackApplication/blob/main/udagram/doc/screenshots/fontend.png)
+
+### Write a proper pipeline file using the config.yml format used by CircleCi
+https://github.com/duyvien/HostAFullStackApplication/blob/main/.circleci/config.yml
+
+### Architecture diagram to document the deployment flow
+- Development Pipeline Diagram
+![alt text]()
+- Infrastructure Diagram
+![alt text]()
+
+
